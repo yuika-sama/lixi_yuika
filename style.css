@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+.container{
+    background-image: url(./img/bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.cheems{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-30%);
+    top: 18%;
+}
+.cheemsaid{
+    position: absolute;
+    top: -46px;
+    left: -100px;
+}
+.cheemsaid .cs1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0ca3c9;
+    width: 300px;
+    height: 70px;   
+    border-radius: 16px;
+}
+.cs1 h4{
+    font-size: 1.2em;
+    color: #fff;
+}
+.cheemsaid .cs2{
+    position: absolute;
+    left: 230px;
+    margin: auto;
+    width: 20px;
+    border-top: 15px solid #0ca3c9;
+    border-left: 20px solid transparent;
+}
+img{
+    max-width: 400px;
+}
+.btn {
+    position: absolute;
+}
+.bg-style{
+    padding: 12px 24px;
+    color: #fff;
+    font-weight: 550;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 12px;
+}
+.bm{
+    position: absolute;
+    top: 46px;
+    left: 168px;
+    display: none;
+}
+.bm img{
+    max-width: 90px;
+}  
+    .btn{
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        width: 600px;
+        height: auto;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    .cho{
+        background-color: #0ca3c9;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+            &:hover{
+                background-color: #025164;
+            }
+    }
+    .dcho{
+        cursor: no-drop;
+        transition: all .3s ease-in-out;
+        background-color: #b43d28;
+            &:hover{
+                background-color: #661d11;
+            }
+    }
+
+    
+@media (max-width: 580px) {
+    .btn{
+        width: 400px;
+    }
+    .cs1{
+        width: 200px !important;
+        height: 60px;
+        margin-left: 24px !important;
+    }
+    .cs2{
+        left: 130px !important;
+    }
+    .img-re{
+        max-width: 300px;
+        margin-left: -60px !important;
+    }
+    .bm img{
+        max-width: 60px !important;
+        margin-left: -96px;
+    }
+}
